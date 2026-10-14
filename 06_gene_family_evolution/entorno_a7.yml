@@ -1,0 +1,19 @@
+# Entorno de A7 (Linux x86-64). Crear con:  mamba env create -f entorno_a7.yml
+# Funannotate NO va aquí: se usa la imagen Docker nextgenusfs/funannotate:v1.8.15 (igual que LPSC 1155).
+name: a7
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.10
+  - orthofinder=2.5
+  - diamond
+  - mafft
+  - fasttree
+  - cafe            # binario: cafe5. Si falla: compilar github.com/hahnlab/CAFExp (cmake) y ponerlo en el PATH
+  - eggnog-mapper=2.1
+  # compleasm: conflicto de dependencias (dendropy/sepp) en este entorno; se usa el del env `comparativa` (ENV_BUSCO en 00_config.sh)
+  - r-base
+  - r-ape
+  - ncbi-datasets-cli
+  - unzip

@@ -1,0 +1,137 @@
+#!/bin/bash
+
+############################################################
+# Complete Genome Assembly and Annotation Pipeline
+# Author: Pablo Villarreal
+# Date: 2025-08-22
+# Description:
+#   This pipeline performs quality control, assembly,
+#   genome evaluation, and annotation of fungal genomes.
+#   Tools used: fastp, SPAdes, QUAST, BUSCO, Funannotate
+############################################################
+
+# -----------------------------
+# 1️⃣ Set working directory and parameters
+# -----------------------------
+WORKDIR=$(pwd)
+RAW_READS_R1="reads_1.fastq.gz"  # forward reads
+RAW_READS_R2="reads_2.fastq.gz"  # reverse reads
+FILTERED_R1="reads_filtered_1.fq.gz"
+FILTERED_R2="reads_filtered_2.fq.gz"
+ASSEMBLY_DIR="$WORKDIR/spades_assembly"
+ASSEMBLY_FASTA="$ASSEMBLY_DIR/contigs.fasta"
+SPECIES="MySpecies"  # change to your species
+CPUS=8
+
+# Funannotate Docker image
+FUNANNOTATE_IMAGE="reslp/funannotate:latest"
+
+echo "======================================="
+echo "Genome Assembly and Annotation Pipeline"
+echo "Working directory: $WORKDIR"
+echo "======================================="
+
+# -----------------------------
+# 2️⃣ Quality control and filtering with fastp
+# -----------------------------
+echo "[Step 1/6] Quality control and trimming reads..."
+fastp -i $RAW_READS_R1 -I $RAW_READS_R2 -o $FILTERED_R1 -O $FILTERED_R2 \
+    --detect_adapter_for_pe --thread $CPUS --html fastp_report.html --json fastp_report.json
+
+# -----------------------------
+# 3️⃣ Genome assembly with SPAdes
+# -----------------------------
+echo "[Step 2/6] Assembling genome with SPAdes..."
+mkdir -p $ASSEMBLY_DIR
+spades.py -1 $FILTERED_R1 -2 $FILTERED_R2 -o $ASSEMBLY_DIR -t $CPUS --careful
+
+# -----------------------------
+# 4️⃣ Assembly evaluation with QUAST
+# -----------------------------
+echo "[Step 3/6] Evaluating assembly with QUAST..."
+quast.py $ASSEMBLY_FASTA -o $WORKDIR/quast_results -t $CPUS
+
+# -----------------------------
+# 5️⃣ Genome completeness with BUSCO
+# -----------------------------
+echo "[Step 4/6] Running BUSCO analysis..."
+# Fungal database example: fungi_odb10
+busco -i $ASSEMBLY_FASTA -l fungi_odb10 -o busco_results -m genome -c $CPUS
+
+# -----------------------------
+# 6️⃣ Funannotate annotation using Docker
+# -----------------------------
+echo "[Step 5/6] Running Funannotate annotation..."
+# Mount working directory to /data in Docker
+# Assumes funannotate database is in WORKDIR/database and external dependencies in WORKDIR/external
+docker run --rm -it -v $WORKDIR:/data $FUNANNOTATE_IMAGE check
+docker run --rm -it -v $WORKDIR:/data $FUNANNOTATE_IMAGE setup -d /data/database
+
+# Funannotate clean, sort, mask, predict
+docker run --rm -it -v $WORKDIR:/data $FUNANNOTATE_IMAGE clean -i /data/$ASSEMBLY_FASTA -o /data/genome_cleaned.fas
+docker run --rm -it -v $WORKDIR:/data $FUNANNOTATE_IMAGE sort -i /data/genome_cleaned.fas -o /data/genome_sorted.fas
+docker run --rm -it -v $WORKDIR:/data $FUNANNOTATE_IMAGE mask -i /data/genome_sorted.fas -o /data/genome_masked.fas -m repeatmasker --cpus $CPUS
+docker run --rm -it -v $WORKDIR:/data $FUNANNOTATE_IMAGE predict -i /data/genome_masked.fas -s "$SPECIES" -o /data/predictions --cpus $CPUS
+
+echo "======================================="
+echo "Pipeline completed! Check results in $WORKDIR/predictions"
+echo "======================================="
+
+
+
+Resumen de configuración de InterProScan para Funannotate en Docker
+=================================================================
+
+1. Montaje de carpetas en Docker:
+
+Se debe usar la opción -v para montar las carpetas del host en el contenedor. 
+Ejemplo:
+
+docker run --rm -it -v $(pwd):/data reslp/funannotate:latest /bin/bash
+
+Donde $(pwd) es la carpeta que contiene:
+- predictions/  (resultados de Funannotate que se usarán como entrada)
+- external/     (donde se encuentra InterProScan)
+
+---
+
+2. Variable de entorno para InterProScan:
+
+Se debe definir la ruta al script de InterProScan dentro del contenedor:
+
+export FUNANNOTATE_IPRSCAN=/data/external/interproscan-5.75-106.0/interproscan.sh
+
+Esto le indica a Funannotate dónde encontrar InterProScan local.
+
+---
+
+3. Comando para correr InterProScan con Funannotate:
+
+funannotate iprscan -i /data/predictions -c 8 -m local --iprscan_path $FUNANNOTATE_IPRSCAN
+
+- -i /data/predictions : carpeta con los archivos de predicción de Funannotate.
+- -c 8 : número de CPUs a utilizar.
+- -m local : indica que se usará InterProScan local.
+- --iprscan_path : ruta al script de InterProScan definido en la variable de entorno.
+
+---
+
+4. Avisos importantes:
+
+- InterProScan puede mostrar el mensaje:
+  "Important: you need to manually configure your interproscan.properties file for embedded workers."
+  Esto no detiene el análisis; solo permite ajustar el número de workers internos.
+- Funannotate iniciará los procesos de InterProScan en paralelo según el número de CPUs indicado.
+
+---
+
+5. Salida de resultados:
+
+- Los resultados de InterProScan se generan dentro de la carpeta de entrada de Funannotate:
+  /data/predictions/interproscan/
+- Incluyen archivos .tsv y .xml con la anotación de dominios, GO, Pfam, etc.
+- Funannotate puede luego integrarlos al archivo de anotaciones finales.
+
+
+
+

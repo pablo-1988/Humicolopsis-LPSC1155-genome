@@ -1,0 +1,20 @@
+#nexus
+begin sets;
+  charset SSU = 1-832;
+  charset LSU = 833-1593;
+  charset ITS_TUB2 = 1594-1864  2582-3898;
+  charset mtSSU = 1865-2581;
+  charset EF1a = 3899-4329;
+  charset MCM7 = 4330-4929;
+  charset RPB1 = 4930-5962;
+  charset RPB2 = 5963-7852;
+  charpartition mymodels =
+    TNe+G4: SSU,
+    TN+F+R3: LSU,
+    TIM2e+I+G4: ITS_TUB2,
+    TPM3u+F+R3: mtSSU,
+    TIM3e+G4: EF1a,
+    HKY+F+R3: MCM7,
+    TIM2e+I+G4: RPB1,
+    TIM2e+R4: RPB2;
+end;

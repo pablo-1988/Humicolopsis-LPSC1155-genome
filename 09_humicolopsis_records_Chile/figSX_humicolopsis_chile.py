@@ -1,4 +1,4 @@
-"""Fig. SX y Table SX — Registros de Humicolopsis en la rizósfera de Nothofagus pumilio en Chile.
+"""Fig. SX y Table SX (a: sitios; b: resumen por sitio, altitud y campaña) — Registros de Humicolopsis en la rizósfera de Nothofagus pumilio en Chile.
 Fuente: Saona et al. 2025, ISME Commun 5:ycaf010 (Table S4: ASV × muestra; Table S1: coordenadas y altitudes).
   (a) mapa de los cuatro sitios (treeline y 200 m bajo el treeline), con detección de Humicolopsis
   (b) frecuencia de detección y abundancia relativa media por sitio, altitud y campaña de muestreo
@@ -91,34 +91,11 @@ tB.columns = ["Location", "Altitude", "Season", "Sampling_date", "Samples_sequen
               "Mean_relative_abundance_%", "Max_relative_abundance_%"]
 
 xy = SITES.set_index(["Location", "Altitude"])
-tC = h[h["Abundance"] > 0].copy()
-tC["Sampling_date"] = tC["Season"].map(DATE)
-tC["Latitude_DD"] = [round(xy.loc[(l, a), "Latitude"], 5) for l, a in zip(tC.Location, tC.Altitude)]
-tC["Longitude_DD"] = [round(xy.loc[(l, a), "Longitude"], 5) for l, a in zip(tC.Location, tC.Altitude)]
-tC["Elevation_m"] = [xy.loc[(l, a), "Elevation_m"] for l, a in zip(tC.Location, tC.Altitude)]
-tC["RA"] = tC["RA"].round(3)
-tC["Taxonomy_UNITE"] = "Ascomycota; Leotiomycetes; Helotiales; Helotiales fam. incertae sedis; Humicolopsis"
-tC["Location"] = pd.Categorical(tC["Location"], LOCS); tC["Altitude"] = pd.Categorical(tC["Altitude"], ALTS)
-tC["Season"] = pd.Categorical(tC["Season"], [s for s, _ in SEASONS])
-tC = tC.sort_values(["Location", "Altitude", "Season", "Replicate", "OTU_ID"])[
-    ["Sample_ID", "OTU_ID", "Location", "Altitude", "Season", "Sampling_date", "Replicate", "Latitude_DD", "Longitude_DD",
-     "Elevation_m", "Abundance", "Total_reads", "RA", "Taxonomy_UNITE"]].rename(
-    columns={"OTU_ID": "ASV", "Abundance": "ASV_reads", "Total_reads": "Sample_total_reads", "RA": "Relative_abundance_%"})
-
-NOTE = ("Table SX. Records of Humicolopsis in the rhizosphere of Nothofagus pumilio in Chile. Data were re-analysed from "
-        "Saona et al. (2025) ISME Communications 5:ycaf010 (doi:10.1093/ismeco/ycaf010; ITS2 metabarcoding, UNITE taxonomy; "
-        "Tables S1 and S4 of that study). Treeline and below-treeline (~200 m lower) sites were sampled in April 2022 (fall), "
-        "June 2022 (winter), October 2022 (spring) and January 2023 (summer); Coyhaique treeline was not sampled in fall 2022. "
-        "Relative abundance = ASV reads / total fungal reads of the sample × 100. (a) Sampling sites; (b) summary per site, "
-        "elevation and season; (c) every sample with Humicolopsis reads. Humicolopsis was assigned at genus level only.")
 with pd.ExcelWriter(OUT / "Table_SX_Humicolopsis_Chile.xlsx") as w:
-    pd.DataFrame({NOTE: []}).to_excel(w, sheet_name="README", index=False)
     tA.to_excel(w, sheet_name="a_sites", index=False)
     tB.to_excel(w, sheet_name="b_site_season_summary", index=False)
-    tC.to_excel(w, sheet_name="c_positive_samples", index=False)
 tA.to_csv(OUT / "Table_SXa_sites.tsv", sep="\t", index=False)
 tB.to_csv(OUT / "Table_SXb_summary.tsv", sep="\t", index=False)
-tC.to_csv(OUT / "Table_SXc_positive_samples.tsv", sep="\t", index=False)
 
 # ---------- figura ----------
 fig = plt.figure(figsize=(7.2, 4.3))

@@ -1,0 +1,24 @@
+hongo_comparativa/A7/cafe/gamma_e_1/Gamma_results.txt:Model Gamma Final Likelihood (-lnL): 137100
+hongo_comparativa/A7/cafe/gamma_e_1/Gamma_results.txt:Lambda: 0.44529153379279
+hongo_comparativa/A7/cafe/gamma_e_1/Gamma_results.txt:Alpha: 0.639403
+hongo_comparativa/A7/cafe/gamma_e_2/Gamma_results.txt:Model Gamma Final Likelihood (-lnL): 137902
+hongo_comparativa/A7/cafe/gamma_e_2/Gamma_results.txt:Lambda: 0.47515885596596
+hongo_comparativa/A7/cafe/gamma_e_2/Gamma_results.txt:Alpha: 0.836269
+hongo_comparativa/A7/cafe/gamma_e_3/Gamma_results.txt:Model Gamma Final Likelihood (-lnL): 137134
+hongo_comparativa/A7/cafe/gamma_e_3/Gamma_results.txt:Lambda: 0.44673196284801
+hongo_comparativa/A7/cafe/gamma_e_3/Gamma_results.txt:Alpha: 0.648083
+hongo_comparativa/A7/cafe/gamma_e_4/Gamma_results.txt:Model Gamma Final Likelihood (-lnL): 142392
+hongo_comparativa/A7/cafe/gamma_e_4/Gamma_results.txt:Lambda: 0.27225891342512
+hongo_comparativa/A7/cafe/gamma_e_4/Gamma_results.txt:Alpha: 0.842991
+hongo_comparativa/A7/cafe/gamma_e_5/Gamma_results.txt:Model Gamma Final Likelihood (-lnL): 137105
+hongo_comparativa/A7/cafe/gamma_e_5/Gamma_results.txt:Lambda: 0.44502000952456
+hongo_comparativa/A7/cafe/gamma_e_5/Gamma_results.txt:Alpha: 0.63952
+hongo_comparativa/A7/cafe/gamma_e_6/Gamma_results.txt:Model Gamma Final Likelihood (-lnL): 137100
+hongo_comparativa/A7/cafe/gamma_e_6/Gamma_results.txt:Lambda: 0.44526198844177
+hongo_comparativa/A7/cafe/gamma_e_6/Gamma_results.txt:Alpha: 0.639351
+hongo_comparativa/A7/cafe/gamma_e_7/Gamma_results.txt:Model Gamma Final Likelihood (-lnL): 137100
+hongo_comparativa/A7/cafe/gamma_e_7/Gamma_results.txt:Lambda: 0.44528075508773
+hongo_comparativa/A7/cafe/gamma_e_7/Gamma_results.txt:Alpha: 0.639339
+hongo_comparativa/A7/cafe/gamma_e_8/Gamma_results.txt:Model Gamma Final Likelihood (-lnL): 137112
+hongo_comparativa/A7/cafe/gamma_e_8/Gamma_results.txt:Lambda: 0.44580401656689
+hongo_comparativa/A7/cafe/gamma_e_8/Gamma_results.txt:Alpha: 0.642483

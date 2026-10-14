@@ -1,0 +1,20 @@
+#nexus
+begin sets;
+  charset TUB2_EF1a = 1-1317  1318-2685;
+  charset MCM7_RPA1_RPC2_TFB4 = 2686-5076  13936-15756  16597-19980  23638-24696;
+  charset RPB1_RPB2 = 5077-10152  10153-13935;
+  charset RPA2 = 15757-16596;
+  charset SF3B1 = 19981-23637;
+  charset SSU = 24697-25779;
+  charset LSU_ITS = 25780-26663  27457-28618;
+  charset mtSSU = 26664-27456;
+  charpartition mymodels =
+    GTR+F+I+G4: TUB2_EF1a,
+    GTR+F+I+R3: MCM7_RPA1_RPC2_TFB4,
+    SYM+I+R3: RPB1_RPB2,
+    TIM2+F+R3: RPA2,
+    SYM+I+R3: SF3B1,
+    GTR+F+I+G4: SSU,
+    TNe+I+R2: LSU_ITS,
+    GTR+F+I+G4: mtSSU;
+end;

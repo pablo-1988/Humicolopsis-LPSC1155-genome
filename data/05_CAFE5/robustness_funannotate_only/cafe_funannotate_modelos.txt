@@ -1,0 +1,22 @@
+hongo_comparativa/A7/robustez/base_e_1/Base_results.txt:Model Base Final Likelihood (-lnL): 86563.4
+hongo_comparativa/A7/robustez/base_e_1/Base_results.txt:Lambda: 0.78382559484329
+hongo_comparativa/A7/robustez/base_e_1/Base_results.txt:Epsilon: 0.00616054
+hongo_comparativa/A7/robustez/base_e_2/Base_results.txt:Model Base Final Likelihood (-lnL): 86563.4
+hongo_comparativa/A7/robustez/base_e_2/Base_results.txt:Lambda: 0.78381297007085
+hongo_comparativa/A7/robustez/base_e_2/Base_results.txt:Epsilon: 0.00616014
+hongo_comparativa/A7/robustez/base_e_3/Base_results.txt:Model Base Final Likelihood (-lnL): 86563.4
+hongo_comparativa/A7/robustez/base_e_3/Base_results.txt:Lambda: 0.78380831543762
+hongo_comparativa/A7/robustez/base_e_3/Base_results.txt:Epsilon: 0.00616136
+hongo_comparativa/A7/robustez/gamma_e_1/Gamma_results.txt:Model Gamma Final Likelihood (-lnL): 80032.3
+hongo_comparativa/A7/robustez/gamma_e_1/Gamma_results.txt:Lambda: 1.4778511142763
+hongo_comparativa/A7/robustez/gamma_e_1/Gamma_results.txt:Epsilon: 0.00616054
+hongo_comparativa/A7/robustez/gamma_e_1/Gamma_results.txt:Alpha: 0.328487
+hongo_comparativa/A7/robustez/gamma_e_2/Gamma_results.txt:Model Gamma Final Likelihood (-lnL): 80032.3
+hongo_comparativa/A7/robustez/gamma_e_2/Gamma_results.txt:Lambda:  1.477882490001
+hongo_comparativa/A7/robustez/gamma_e_2/Gamma_results.txt:Epsilon: 0.00616054
+hongo_comparativa/A7/robustez/gamma_e_2/Gamma_results.txt:Alpha: 0.328523
+hongo_comparativa/A7/robustez/gamma_e_3/Gamma_results.txt:Model Gamma Final Likelihood (-lnL): 80032.3
+hongo_comparativa/A7/robustez/gamma_e_3/Gamma_results.txt:Lambda: 1.4778744142795
+hongo_comparativa/A7/robustez/gamma_e_3/Gamma_results.txt:Epsilon: 0.00616054
+hongo_comparativa/A7/robustez/gamma_e_3/Gamma_results.txt:Alpha: 0.328514
+modelo elegido (solo Funannotate): hongo_comparativa/A7/robustez/gamma_e_1

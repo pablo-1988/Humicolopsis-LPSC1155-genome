@@ -1,0 +1,30 @@
+category	family	source	HumcLPSC	HumcCH11	Allacyti	Allalyco	Xenopyri	Leotlubr	Clausp	Pseudest	Cyclminu	Chaeraph	Oidimaiu	Hyalhepa	Phiasuba	Mollscop	Cadosp	Glarlozo	Hymefrax	Erysneca	Sclescle	Botrcine	Chloaeru	Neurcras	Aspenige	Sacccere
+P sensing & regulation	PHO85 (CDK)	árbol	1	1	1	1	1	1	1	1	1	1	2	1	1	1	1	1	1	1	1	1	1	1	3	1
+P sensing & regulation	PHO80 (cyclin)	OG	2	2	2	2	2	1	2	2	2	2	5	1	3	2	2	2	2	2	2	2	2	2	2	1
+P sensing & regulation	PHO81 (CDK inhibitor, SPX)	árbol	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+P sensing & regulation	PHO4/NUC-1 (bHLH TF)	árbol	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+P sensing & regulation	KCS1 (IP6K)	OG	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+P sensing & regulation	VIP1 (PP-IP5K)	OG	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	0	1
+Pi transport	PHO84 (H+/Pi, high affinity)	árbol	7	4	1	1	1	5	2	0	2	2	4	5	4	4	3	2	2	0	3	2	2	1	1	1
+Pi transport	PHO89 (Na+/Pi)	árbol+manual	2	1	0	1	1	0	0	1	0	0	1	1	1	1	3	1	1	0	0	0	0	1	1	1
+Pi transport	PHO87/90/91 (low affinity, SPX)	árbol	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	3
+Pi transport	SYG1 (Pi exporter, SPX)	árbol	1	1	1	1	1	1	1	1	1	1	2	0	2	1	1	1	1	1	1	1	1	1	1	1
+PolyP & vacuolar homeostasis	VTC1	árbol	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	0	1	1	1
+PolyP & vacuolar homeostasis	VTC2/3 (SPX)	árbol	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	2
+PolyP & vacuolar homeostasis	VTC4 (SPX)	árbol	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+PolyP & vacuolar homeostasis	PPX1 (exopolyphosphatase)	OG	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	2	1	1	1	1	1	1	1	1
+PolyP & vacuolar homeostasis	PPN1 (endopolyphosphatase)	OG	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	0	1	1	1	1	1	1
+Phosphatases & phytases	HAP phytase (PhyA-like)	árbol	3	3	3	3	3	1	1	1	3	2	2	2	4	5	3	3	2	4	3	3	2	2	4	0
+Phosphatases & phytases	HAP phytase (PhyB-like)	árbol	0	0	0	0	0	0	0	0	0	0	1	0	0	1	0	0	0	0	0	0	0	0	2	0
+Phosphatases & phytases	Alkaline phosphatase (PHO8)	árbol	2	2	1	1	1	1	1	2	1	1	1	1	2	2	3	4	2	0	1	1	1	2	1	1
+Phosphatases & phytases	Purple acid phosphatase	árbol	3	3	1	1	0	0	0	2	2	0	7	2	4	5	0	0	1	0	0	0	2	2	2	0
+Phosphatases & phytases	Glycerophosphodiesterase (GDE1)	árbol	1	1	1	1	1	3	1	3	1	1	0	0	1	1	2	2	2	1	1	1	1	1	2	1
+Organic acids	Oxaloacetate acetylhydrolase (OAH)	árbol	2	2	2	2	2	0	0	1	2	2	2	1	2	2	1	1	1	0	1	2	0	1	3	0
+Organic acids	Oxalate decarboxylase	árbol	3	3	1	1	1	0	0	0	1	1	3	3	3	5	4	4	4	0	2	2	1	1	2	0
+Organic acids	Citrate synthase	OG	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	2
+Organic acids	ATP-citrate lyase	OG	3	3	2	2	2	3	2	2	2	2	3	5	3	3	3	3	3	2	3	3	2	3	2	0
+Organic acids	Malate dehydrogenase	OG	3	2	2	2	2	2	2	2	2	2	2	2	3	2	3	2	2	2	2	2	2	2	3	3
+Organic acids	Isocitrate lyase	árbol	1	1	1	1	1	1	1	1	1	1	1	1	2	1	1	1	1	1	1	1	1	1	1	1
+Organic acid transport	Citrate exporter (CexA-like)	árbol+manual	1	2	1	1	1	0	1	2	1	2	2	2	2	1	1	1	2	0	1	1	0	1	1	0
+Organic acid transport	Malate transporter (Mae1/TDT)	árbol	4	6	2	3	4	1	1	1	2	1	3	3	7	6	5	5	4	1	3	4	2	4	5	1
+Organic acid transport	Mitochondrial citrate carrier (CTP1)	OG	3	3	1	1	1	1	4	1	1	2	4	3	5	5	4	3	1	1	2	2	1	1	2	1

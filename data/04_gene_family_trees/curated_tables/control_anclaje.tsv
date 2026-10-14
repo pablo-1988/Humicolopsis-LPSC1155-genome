@@ -1,0 +1,30 @@
+family	fuente	anclas	anclas_presentes	miembros_clado	UFBoot_u_OGs	extra_especies_sin_cambio	ejemplos_extra
+PHO85 (CDK)	árbol	20	20	27	100	0	
+PHO80 (cyclin)	OG	36	36	49	OG0001236,OG0006696	1	HumcLPSC|FUN_001784-T1
+PHO81 (CDK inhibitor, SPX)	árbol	17	17	24	100	0	
+PHO4/NUC-1 (bHLH TF)	árbol	17	17	24		0	
+KCS1 (IP6K)	OG	17	17	24	OG0002817	0	
+VIP1 (PP-IP5K)	OG	16	16	23	OG0004363	0	
+PHO84 (H+/Pi, high affinity)	árbol	43	43	59	100	0	
+PHO89 (Na+/Pi)	árbol	15	15	20	29	4	Botrcine|XP_024546541.1 Cadosp|KAH7397775.1 Glarlozo|XP_008087052.1 Sclescle|APA06721.1
+PHO87/90/91 (low affinity, SPX)	árbol	19	19	26	82	0	
+SYG1 (Pi exporter, SPX)	árbol	18	18	22	69	0	
+VTC1	árbol	16	16	23	84	0	
+VTC2/3 (SPX)	árbol	18	18	25	100	0	
+VTC4 (SPX)	árbol	17	17	24	96	0	
+PPX1 (exopolyphosphatase)	OG	18	18	54	OG0001274,OG0002419	21	Aspenige|XP_001388672.3 Botrcine|XP_024552302.1 Cadosp|KAH7411427.1 Cadosp|KAH7412908.1 Clausp|KAI9745700.1 Erysneca|KAI6247630.1 Glarlozo|XP_008077901.1 HumcLPSC|FUN_003859-T1
+PPN1 (endopolyphosphatase)	OG	16	16	23	OG0004344	0	
+HAP phytase (PhyA-like)	árbol	44	44	63	88	0	
+HAP phytase (PhyB-like)	árbol	4	4	4	100	0	
+Alkaline phosphatase (PHO8)	árbol	27	27	35		0	
+Purple acid phosphatase	árbol	30	30	39		0	
+Glycerophosphodiesterase (GDE1)	árbol	21	21	30	98	0	
+Oxaloacetate acetylhydrolase (OAH)	árbol	20	20	32	99	0	
+Oxalate decarboxylase	árbol	37	37	45		0	
+Citrate synthase	OG	18	18	25	OG0002335	0	
+ATP-citrate lyase	OG	45	45	62	OG0004635,OG0004636,OG0007773,OG0016228	0	
+Malate dehydrogenase	OG	39	39	53	OG0001602,OG0003448,OG0042088,OG0042711	0	
+Isocitrate lyase	árbol	18	18	25	99	0	
+Citrate exporter (CexA-like)	árbol	19	19	27	100	0	
+Malate transporter (Mae1/TDT)	árbol	59	59	75		0	
+Mitochondrial citrate carrier (CTP1)	OG	43	43	53	OG0001297,OG0007544,OG0009003	0	

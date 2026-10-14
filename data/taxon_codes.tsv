@@ -1,0 +1,26 @@
+code	accession	taxon	order	group
+HumcLPSC	-	Humicolopsis cephalosporioides LPSC 1155	Incertae sedis	focal
+Allacyti	GCA_024752435.1	Allantophomopsis cytisporea ATCC 66955	Phacidiales	nucleo
+Allalyco	GCA_024752465.1	Allantophomopsis lycopodina ATCC 66958	Phacidiales	nucleo
+Xenopyri	GCA_022609375.1	Xenosphaeropsis pyriputrescens CBS 115176	Phacidiales	nucleo
+Leotlubr	GCA_965240495.1	Leotia lubrica	Leotiales	nucleo
+Clausp	GCA_026023515.1	Claussenomyces sp. TS43310	Leotiales	nucleo
+Cyclminu	GCA_037179335.1	Cyclaneusma minus	Marthamycetales	nucleo
+Chaeraph	GCA_040369945.1	Chaetomella raphigera JCM 9995	Chaetomellales	nucleo
+Pseudest	GCF_001641265.1	Pseudogymnoascus destructans	Thelebolales	nucleo
+Oidimaiu	GCA_000827325.1	Oidiodendron maius Zn	Myxotrichaceae	nucleo
+Hyalhepa	GCA_002865625.1	Hyaloscypha hepaticicola (Rhizoscyphus ericae)	Helotiales	nucleo
+Phiasuba	GCA_900073065.1	Phialocephala subalpina	Helotiales	nucleo
+Cadosp	GCA_020747065.1	Cadophora sp. MPI-SDFR-AT-0126	Helotiales	nucleo
+Sclescle	GCA_001857865.1	Sclerotinia sclerotiorum 1980 UF-70	Helotiales	nucleo
+Botrcine	GCF_000143535.2	Botrytis cinerea B05.10	Helotiales	nucleo
+Glarlozo	GCF_000409485.1	Glarea lozoyensis ATCC 20868	Helotiales	nucleo
+Hymefrax	GCA_911649665.1	Hymenoscyphus fraxineus	Helotiales	nucleo
+Mollscop	GCF_001500285.1	Mollisia scopiformis	Helotiales	nucleo
+Chloaeru	GCA_002276475.2	Chlorociboria aeruginascens	Helotiales	nucleo
+Erysneca	GCA_024703715.1	Erysiphe necator	Helotiales	nucleo
+Neurcras	GCF_000182925.2	Neurospora crassa OR74A	Sordariales	grupo_externo
+Sacccere	GCF_000146045.2	Saccharomyces cerevisiae S288C	Saccharomycetales	ref_funcional
+Aspenige	GCF_000002855.4	Aspergillus niger CBS 513.88	Eurotiales	ref_funcional
+HumcCH11	GCA_050941815.1	Humicolopsis cephalosporioides CH-1.1	Incertae sedis	focal_ref
+HumcCBS645	-	Humicolopsis cephalosporioides CBS 645.76 (ex-type)	Incertae sedis	focal_ref_parcial

@@ -2,9 +2,6 @@ __pycache__/
 *.pyc
 .DS_Store
 _scratch/
-*.fasta
-*.fna
-*.faa
 *.bam
 *.bai
 *.fq.gz

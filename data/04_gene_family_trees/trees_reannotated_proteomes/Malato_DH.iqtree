@@ -1,0 +1,436 @@
+IQ-TREE 3.1.3 built Jul 26 2026
+
+Input file name: hongo_comparativa/A4_A7prot/Malato_DH.trim.aln
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 989812
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Piyumal Demotte, Hector Banos,
+Andrew J. Roger, Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman,
+Matthew W. Hahn, Mario dos Reis, Le Sy Vinh, Gavin Huttley, Robert Lanfear, Bui Quang Minh (2026)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Molecular Biology and Evolution, msag117.
+https://doi.org/10.1093/molbev/msag117
+
+Since you used ModelFinder please also cite: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+NOTE: Alignment sequence type is auto-detected. If in doubt, specify it via -st option.
+Input data: 66 sequences with 287 amino-acid sites
+Number of constant sites: 17 (= 5.92334% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 17 (= 5.92334% of all sites)
+Number of parsimony informative sites: 261
+Number of distinct site patterns: 285
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: LG+R4
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+LG+R4            -12249.785   24769.569 +    0.245   25012.748 +     0.95   25263.599 +    0.876
+LG+I+R4          -12249.599   24771.199 +    0.108   25019.625 -   0.0305   25268.888 +   0.0622
+LG+R5            -12246.922   24767.844 +    0.579   25021.616 -   0.0113   25269.194 +   0.0534
+Q.YEAST+R4       -12254.667   24779.334 -  0.00185   25022.513 -   0.0072   25273.364 -  0.00664
+LG+I+R5          -12248.186   24772.373 +   0.0602   25031.589 -  7.7e-05   25277.381 - 0.000891
+Q.YEAST+R5       -12251.646   24777.291 -  0.00515   25031.063 -   0.0001   25278.640 - 0.000475
+Q.YEAST+I+R4     -12254.629   24781.258 - 0.000708   25029.684 - 0.000199   25278.947 - 0.000407
+LG+G4            -12274.130   24808.260 -  9.7e-10   25026.593 - 0.000936   25283.993 - 3.27e-05
+LG+I+G4          -12273.572   24809.144 - 6.23e-10   25032.267 - 5.48e-05   25288.537 - 3.37e-06
+Q.PFAM+R4        -12265.803   24801.606 -  2.7e-08   25044.784 - 1.05e-07   25295.636 - 9.68e-08
+Q.PFAM+R5        -12262.352   24798.703 - 1.15e-07   25052.475 - 2.24e-09   25300.052 - 1.06e-08
+Q.PFAM+I+R4      -12266.096   24804.192 - 7.42e-09   25052.618 - 2.09e-09   25301.881 - 4.26e-09
+LG+I+R3          -12277.234   24822.468 - 7.97e-13   25060.494 - 4.07e-11   25312.839 - 1.78e-11
+LG+R3            -12281.469   24828.939 - 3.14e-14   25061.906 - 2.01e-11   25315.650 - 4.36e-12
+WAG+R4           -12303.103   24876.206 - 1.71e-24   25119.385 - 6.63e-24   25370.236 - 6.12e-24
+WAG+I+R4         -12301.411   24874.821 - 3.41e-24   25123.248 - 9.61e-25   25372.511 - 1.96e-24
+WAG+R5           -12301.839   24877.678 - 8.18e-25   25131.449 - 1.59e-26   25379.027 - 7.55e-26
+LG+I+R2          -12340.824   24945.648 - 1.42e-39   25173.648 - 1.09e-35   25428.699 - 1.23e-36
+LG+F+R4          -12283.809   24875.618 - 2.29e-24   25237.285 - 1.66e-49   25439.179 - 6.55e-39
+LG+F+R5          -12280.305   24872.610 - 1.03e-23   25249.410 - 3.86e-52   25443.489 - 7.58e-40
+LG+F+I+R4        -12284.022   24878.045 - 6.81e-25   25247.205 - 1.16e-51   25445.265 - 3.12e-40
+LG+R2            -12367.322   24996.644 -  1.2e-50   25219.766 - 1.06e-45   25476.036 - 6.49e-47
+Q.PFAM+F+R4      -12308.311   24924.623 - 5.24e-35   25286.289 - 3.79e-60   25488.183 -  1.5e-49
+Q.PFAM+F+R5      -12303.517   24919.035 - 8.56e-34   25295.835 - 3.21e-62   25489.914 - 6.29e-50
+Q.PFAM+F+I+R4    -12308.996   24927.993 - 9.71e-36   25297.153 - 1.66e-62   25495.212 - 4.45e-51
+WAG+F+R4         -12333.720   24975.440 - 4.83e-46   25337.107 -  3.5e-71   25539.001 - 1.38e-60
+WAG+F+I+R4       -12332.878   24975.757 - 4.12e-46   25344.917 - 7.05e-73   25542.976 - 1.89e-61
+WAG+F+R5         -12332.145   24976.291 - 3.16e-46   25353.091 - 1.18e-74   25547.170 - 2.32e-62
+Q.YEAST+F+R4     -12351.395   25010.789 - 1.02e-53   25372.456 - 7.38e-79   25574.350 - 2.91e-68
+Q.YEAST+F+R5     -12348.500   25009.001 - 2.49e-53   25385.801 - 9.34e-82   25579.880 - 1.83e-69
+Q.YEAST+F+I+R4   -12351.905   25013.811 - 2.25e-54   25382.971 - 3.84e-81   25581.031 - 1.03e-69
+JTT+R4           -12471.159   25212.318 - 1.76e-97   25455.497 - 6.85e-97   25706.349 - 6.32e-97
+JTT+I+R4         -12470.083   25212.167 -  1.9e-97   25460.593 - 5.36e-98   25709.856 - 1.09e-97
+JTT+R5           -12469.544   25213.089 -  1.2e-97   25466.860 - 2.34e-99   25714.438 - 1.11e-98
+JTT+F+R4         -12519.643   25347.285 - 8.69e-127   25708.952 - 6.29e-152   25910.845 - 2.48e-141
+JTT+F+I+R4       -12519.468   25348.937 - 3.8e-127   25718.097 - 6.5e-154   25916.156 - 1.74e-142
+JTT+F+R5         -12517.601   25347.201 - 9.06e-127   25724.001 - 3.4e-155   25918.081 - 6.66e-143
+LG+I             -12741.613   25743.226 - 9.15e-213   25961.559 - 8.83e-207   26218.958 - 3.08e-208
+LG               -12820.741   25899.483 - 1.07e-246   26113.113 - 1.09e-239   26371.556 - 2.25e-241
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: LG+R4
+
+State frequencies: (model)
+
+Model of rate heterogeneity: FreeRate with 4 categories
+Site proportion and rates:  (0.2050,0.1158) (0.4788,0.5698) (0.2448,1.6250) (0.0715,4.2757)
+
+ Category  Relative_rate  Proportion
+  1         0.1158         0.2050
+  2         0.5698         0.4788
+  3         1.6250         0.2448
+  4         4.2757         0.0715
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -12203.3885 (s.e. 475.1449)
+Unconstrained log-likelihood (without tree): -1620.9756
+Number of free parameters (#branches + #model parameters): 135
+Akaike information criterion (AIC) score: 24676.7770
+Corrected Akaike information criterion (AICc) score: 24919.9558
+Bayesian information criterion (BIC) score: 25170.8071
+
+Total tree length (sum of branch lengths): 15.2894
+Sum of internal branch lengths: 6.5843 (43.0645% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Allacyti|FUN_005358-T1' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++--Allacyti|FUN_005358-T1
+|
+|                                                                    +--Allacyti|FUN_005478-T1
+|                                                                 +--| (100)
+|                                                                 |  +**Allalyco|FUN_000622-T1
+|                                                              +--| (100)
+|                                                              |  +--Xenopyri|FUN_006189-T1
+|                                                           +--| (53)
+|                                                           |  +--Chaeraph|FUN_003900-T1
+|                                                        +--| (44)
+|                                                        |  |  +**HumcCH11|FUN_012928-T1
+|                                                        |  +--| (100)
+|                                                        |     +**HumcLPSC|FUN_004130-T1
+|                                                     +--| (45)
+|                                                     |  |  +--Botrcine|XP_001553849.1
+|                                                     |  +--| (100)
+|                                                     |     +--Sclescle|APA13271.1
+|                                                  +--| (60)
+|                                                  |  +--Chloaeru|TAQ84506.1
+|                                               +--| (40)
+|                                               |  +--Oidimaiu|KIN00517.1
+|                                            +--| (32)
+|                                            |  |        +--Aspenige|XP_001391302.1
+|                                            |  |     +--| (80)
+|                                            |  |     |  |    +**Sacccere|NP_012838.1
+|                                            |  |     |  +----| (100)
+|                                            |  |     |       +**REF_MDH1_P17505_Malato_DH
+|                                            |  |  +--| (79)
+|                                            |  |  |  +--Neurcras|XP_958408.1
+|                                            |  +--| (64)
+|                                            |     +--Cyclminu|FUN_002759-T1
+|                                         +--| (35)
+|                                         |  |  +--Clausp|KAI9741536.1
+|                                         |  +--| (50)
+|                                         |     +--Glarlozo|XP_008084136.1
+|                                      +--| (74)
+|                                      |  |  +--Hymefrax|CAG8961555.1
+|                                      |  +--| (41)
+|                                      |     |  +--Leotlubr|FUN_004249-T1
+|                                      |     +--| (47)
+|                                      |        +--Pseudest|XP_024321656.1
+|                                   +--| (39)
+|                                   |  +--Hyalhepa|PMD15429.1
+|                                +--| (74)
+|                                |  +--Cadosp|KAH7417986.1
+|                             +--| (82)
+|                             |  |  +--Mollscop|XP_018070753.1
+|                             |  +--| (98)
+|                             |     +--Phiasuba|CZR64855.1
+|                          +--| (100)
+|                          |  +--Erysneca|KAI6247947.1
+|                       +--| (90)
+|                       |  |                                         +-----------Aspenige|XP_001402180.1
+|                       |  |                                     +---| (100)
+|                       |  |                                     |   |   +**HumcCH11|FUN_011069-T1
+|                       |  |                                     |   +---| (100)
+|                       |  |                                     |       +**HumcLPSC|FUN_002596-T1
+|                       |  |                               +-----| (99)
+|                       |  |                               |     |        +--Cadosp|KAH7400220.1
+|                       |  |                               |     |     +--| (99)
+|                       |  |                               |     |     |  |  +--Mollscop|XP_018061419.1
+|                       |  |                               |     |     |  +--| (99)
+|                       |  |                               |     |     |     +--Phiasuba|CZR55972.1
+|                       |  |                               |     |  +--| (100)
+|                       |  |                               |     |  |  +--Hyalhepa|PMD26915.1
+|                       |  |                               |     +--| (92)
+|                       |  |                               |        +--Oidimaiu|KIM95264.1
+|                       |  |  +----------------------------| (100)
+|                       |  |  |                            |   +--Mollscop|XP_018064236.1
+|                       |  |  |                            +---| (98)
+|                       |  |  |                                +----Neurcras|XP_964554.1
+|                       |  +--| (85)
+|                       |     |          +**Sacccere|NP_010205.1
+|                       |     |  +-------| (100)
+|                       |     |  |       +**REF_MDH3_P32419_Malato_DH
+|                       |     +--| (58)
+|                       |        |        +**Sacccere|NP_014515.2
+|                       |        +--------| (100)
+|                       |                 +**REF_MDH2_P22133_Malato_DH
+|                    +--| (97)
+|                    |  |  +---Aspenige|XP_001394696.1
+|                    |  +--| (100)
+|                    |     |  +--Cadosp|KAH7409637.1
+|                    |     +--| (98)
+|                    |        |  +--HumcLPSC|FUN_011118-T1
+|                    |        +--| (62)
+|                    |           +--Phiasuba|CZR56502.1
+|                 +--| (97)
+|                 |  +--Aspenige|XP_003188908.1
+|              +--| (90)
+|              |  +--Chaeraph|FUN_004362-T1
+|           +--| (90)
+|           |  +--Cyclminu|FUN_001636-T1
+|        +--| (33)
+|        |  |     +--Clausp|KAI9746425.1
+|        |  |  +--| (85)
+|        |  |  |  +--Leotlubr|FUN_008398-T1
+|        |  +--| (60)
+|        |     +--Neurcras|XP_011393887.1
+|     +--| (78)
+|     |  |        +--Botrcine|XP_024554015.1
+|     |  |     +--| (100)
+|     |  |     |  +--Sclescle|APA15334.1
+|     |  |  +--| (41)
+|     |  |  |  |     +--Cadosp|KAH7393179.1
+|     |  |  |  |  +--| (35)
+|     |  |  |  |  |  |        +--Erysneca|KAI6251061.1
+|     |  |  |  |  |  |     +--| (43)
+|     |  |  |  |  |  |     |  +--Glarlozo|XP_008078525.1
+|     |  |  |  |  |  |  +--| (29)
+|     |  |  |  |  |  |  |  |  +--Mollscop|XP_018074471.1
+|     |  |  |  |  |  |  |  +--| (100)
+|     |  |  |  |  |  |  |     +--Phiasuba|CZR58982.1
+|     |  |  |  |  |  +--| (27)
+|     |  |  |  |  |     |  +--Hyalhepa|PMD28595.1
+|     |  |  |  |  |     +--| (81)
+|     |  |  |  |  |        +--Oidimaiu|KIM95928.1
+|     |  |  |  +--| (35)
+|     |  |  |     +--Hymefrax|CAG8954146.1
+|     |  +--| (35)
+|     |     +--Chloaeru|TAQ89812.1
+|  +--| (100)
+|  |  |     +**HumcCH11|FUN_011430-T1
+|  |  |  +--| (100)
+|  |  |  |  +**HumcLPSC|FUN_002941-T1
+|  |  +--| (77)
+|  |     +--Pseudest|XP_024321006.1
++--| (98)
+|  +--Xenopyri|FUN_006095-T1
+|
++--Allalyco|FUN_000727-T1
+
+Tree in newick format:
+
+(Allacyti|FUN_005358-T1:0.0214712252,(((((((((((((((((((((((Allacyti|FUN_005478-T1:0.0182283875,Allalyco|FUN_000622-T1:0.0000020867)100:0.0136671339,Xenopyri|FUN_006189-T1:0.0276436398)100:0.0414698324,Chaeraph|FUN_003900-T1:0.1017351915)53:0.0121301124,(HumcCH11|FUN_012928-T1:0.0000010057,HumcLPSC|FUN_004130-T1:0.0000010057)100:0.0195608040)44:0.0054819207,(Botrcine|XP_001553849.1:0.0196505487,Sclescle|APA13271.1:0.0140915200)100:0.0433090938)45:0.0105962889,Chloaeru|TAQ84506.1:0.0604080122)60:0.0067722312,Oidimaiu|KIN00517.1:0.0784988715)40:0.0113566290,(((Aspenige|XP_001391302.1:0.1180674482,(Sacccere|NP_012838.1:0.0000025861,REF_MDH1_P17505_Malato_DH:0.0000025859)100:0.4709509750)80:0.0407400856,Neurcras|XP_958408.1:0.1065402009)79:0.0509919981,Cyclminu|FUN_002759-T1:0.0532952066)64:0.0165972843)32:0.0078435449,(Clausp|KAI9741536.1:0.0606386606,Glarlozo|XP_008084136.1:0.0479939743)50:0.0077626130)35:0.0051840378,(Hymefrax|CAG8961555.1:0.0327583201,(Leotlubr|FUN_004249-T1:0.1236750966,Pseudest|XP_024321656.1:0.0456799664)47:0.0131232698)41:0.0143479314)74:0.0063344919,Hyalhepa|PMD15429.1:0.0341541047)39:0.0102521900,Cadosp|KAH7417986.1:0.0345630853)74:0.0101302571,(Mollscop|XP_018070753.1:0.0118279032,Phiasuba|CZR64855.1:0.0231961408)98:0.0132258972)82:0.0824569815,Erysneca|KAI6247947.1:0.1700852935)100:0.3220154879,((((Aspenige|XP_001402180.1:1.1556809259,(HumcCH11|FUN_011069-T1:0.0000021696,HumcLPSC|FUN_002596-T1:0.0000021503)100:0.3695025341)100:0.3784785624,(((Cadosp|KAH7400220.1:0.1337479893,(Mollscop|XP_018061419.1:0.0875249873,Phiasuba|CZR55972.1:0.0589441346)99:0.0296685139)99:0.0526489372,Hyalhepa|PMD26915.1:0.1762937402)100:0.2176328088,Oidimaiu|KIM95264.1:0.2415666260)92:0.1621293353)99:0.5985266512,(Mollscop|XP_018064236.1:0.3435191010,Neurcras|XP_964554.1:0.4650594002)98:0.4495470584)100:2.6429072460,((Sacccere|NP_010205.1:0.0000010057,REF_MDH3_P32419_Malato_DH:0.0000022424)100:0.7327127075,(Sacccere|NP_014515.2:0.0000021920,REF_MDH2_P22133_Malato_DH:0.0000010057)100:0.8722121401)58:0.0229304599)85:0.1697934505)90:0.1310872347,(Aspenige|XP_001394696.1:0.4372838866,(Cadosp|KAH7409637.1:0.1260347943,(HumcLPSC|FUN_011118-T1:0.1238640313,Phiasuba|CZR56502.1:0.1110223078)62:0.0319295686)98:0.1371336761)100:0.2318850368)97:0.0892355432,Aspenige|XP_003188908.1:0.1794783493)97:0.0849498403,Chaeraph|FUN_004362-T1:0.0964176083)90:0.0395322265,Cyclminu|FUN_001636-T1:0.1129947462)90:0.0388237588,((Clausp|KAI9746425.1:0.0803682098,Leotlubr|FUN_008398-T1:0.1589813869)85:0.0138477882,Neurcras|XP_011393887.1:0.1383264389)60:0.0242514910)33:0.0050210507,(((Botrcine|XP_024554015.1:0.0083800247,Sclescle|APA15334.1:0.0260187444)100:0.0283047221,((Cadosp|KAH7393179.1:0.0659300632,(((Erysneca|KAI6251061.1:0.2826422237,Glarlozo|XP_008078525.1:0.0206903926)43:0.0128823187,(Mollscop|XP_018074471.1:0.0093486400,Phiasuba|CZR58982.1:0.0208122858)100:0.0317793419)29:0.0125563709,(Hyalhepa|PMD28595.1:0.0463882647,Oidimaiu|KIM95928.1:0.0638403750)81:0.0210995110)27:0.0178323331)35:0.0160500781,Hymefrax|CAG8954146.1:0.0448744045)35:0.0190860555)41:0.0350644692,Chloaeru|TAQ89812.1:0.0318105627)35:0.0149742212)78:0.0132397268,((HumcCH11|FUN_011430-T1:0.0000010057,HumcLPSC|FUN_002941-T1:0.0000021059)100:0.0769910870,Pseudest|XP_024321006.1:0.0611279595)77:0.0102864809)100:0.0393101754,Xenopyri|FUN_006095-T1:0.0234930880)98:0.0140800425,Allalyco|FUN_000727-T1:0.0264650184);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -12209.732383
+Robinson-Foulds distance between ML tree and consensus tree: 10
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--Allacyti|FUN_005358-T1
+|
+|                                                                    +--Allacyti|FUN_005478-T1
+|                                                                 +--| (100)
+|                                                                 |  +--Allalyco|FUN_000622-T1
+|                                                              +--| (100)
+|                                                              |  +--Xenopyri|FUN_006189-T1
+|                                                           +--| (53)
+|                                                           |  +--Chaeraph|FUN_003900-T1
+|                                                        +--| (44)
+|                                                        |  |  +--HumcCH11|FUN_012928-T1
+|                                                        |  +--| (100)
+|                                                        |     +--HumcLPSC|FUN_004130-T1
+|                                                     +--| (45)
+|                                                     |  |  +--Botrcine|XP_001553849.1
+|                                                     |  +--| (100)
+|                                                     |     +--Sclescle|APA13271.1
+|                                                  +--| (60)
+|                                                  |  +--Chloaeru|TAQ84506.1
+|                                               +--| (40)
+|                                               |  +--Oidimaiu|KIN00517.1
+|                                            +--| (32)
+|                                            |  |        +--Aspenige|XP_001391302.1
+|                                            |  |     +--| (80)
+|                                            |  |     |  |    +--Sacccere|NP_012838.1
+|                                            |  |     |  +----| (100)
+|                                            |  |     |       +--REF_MDH1_P17505_Malato_DH
+|                                            |  |  +--| (79)
+|                                            |  |  |  +--Neurcras|XP_958408.1
+|                                            |  +--| (64)
+|                                            |     +--Cyclminu|FUN_002759-T1
+|                                         +--| (35)
+|                                         |  |  +--Clausp|KAI9741536.1
+|                                         |  +--| (50)
+|                                         |     +--Glarlozo|XP_008084136.1
+|                                      +--| (74)
+|                                      |  |  +--Hymefrax|CAG8961555.1
+|                                      |  +--| (41)
+|                                      |     |  +--Leotlubr|FUN_004249-T1
+|                                      |     +--| (47)
+|                                      |        +--Pseudest|XP_024321656.1
+|                                   +--| (39)
+|                                   |  +--Hyalhepa|PMD15429.1
+|                                +--| (74)
+|                                |  +--Cadosp|KAH7417986.1
+|                             +--| (82)
+|                             |  |  +--Mollscop|XP_018070753.1
+|                             |  +--| (98)
+|                             |     +--Phiasuba|CZR64855.1
+|                          +--| (100)
+|                          |  +--Erysneca|KAI6247947.1
+|                       +--| (90)
+|                       |  |                                         +-----------Aspenige|XP_001402180.1
+|                       |  |                                     +---| (100)
+|                       |  |                                     |   |   +--HumcCH11|FUN_011069-T1
+|                       |  |                                     |   +---| (100)
+|                       |  |                                     |       +--HumcLPSC|FUN_002596-T1
+|                       |  |                               +-----| (99)
+|                       |  |                               |     |        +--Cadosp|KAH7400220.1
+|                       |  |                               |     |     +--| (99)
+|                       |  |                               |     |     |  |  +--Mollscop|XP_018061419.1
+|                       |  |                               |     |     |  +--| (99)
+|                       |  |                               |     |     |     +--Phiasuba|CZR55972.1
+|                       |  |                               |     |  +--| (100)
+|                       |  |                               |     |  |  +--Hyalhepa|PMD26915.1
+|                       |  |                               |     +--| (92)
+|                       |  |                               |        +--Oidimaiu|KIM95264.1
+|                       |  |  +----------------------------| (100)
+|                       |  |  |                            |   +--Mollscop|XP_018064236.1
+|                       |  |  |                            +---| (98)
+|                       |  |  |                                +----Neurcras|XP_964554.1
+|                       |  +--| (85)
+|                       |     |          +--Sacccere|NP_010205.1
+|                       |     |  +-------| (100)
+|                       |     |  |       +--REF_MDH3_P32419_Malato_DH
+|                       |     +--| (58)
+|                       |        |        +--Sacccere|NP_014515.2
+|                       |        +--------| (100)
+|                       |                 +--REF_MDH2_P22133_Malato_DH
+|                    +--| (97)
+|                    |  |  +---Aspenige|XP_001394696.1
+|                    |  +--| (100)
+|                    |     |  +--Cadosp|KAH7409637.1
+|                    |     +--| (98)
+|                    |        |  +--HumcLPSC|FUN_011118-T1
+|                    |        +--| (62)
+|                    |           +--Phiasuba|CZR56502.1
+|                 +--| (97)
+|                 |  +--Aspenige|XP_003188908.1
+|              +--| (90)
+|              |  +--Chaeraph|FUN_004362-T1
+|           +--| (90)
+|           |  +--Cyclminu|FUN_001636-T1
+|        +--| (33)
+|        |  |     +--Clausp|KAI9746425.1
+|        |  |  +--| (85)
+|        |  |  |  +--Leotlubr|FUN_008398-T1
+|        |  +--| (60)
+|        |     +--Neurcras|XP_011393887.1
+|     +--| (78)
+|     |  |           +--Botrcine|XP_024554015.1
+|     |  |        +--| (100)
+|     |  |        |  +--Sclescle|APA15334.1
+|     |  |     +--| (43)
+|     |  |     |  |        +--Cadosp|KAH7393179.1
+|     |  |     |  |     +--| (52)
+|     |  |     |  |     |  |  +--Mollscop|XP_018074471.1
+|     |  |     |  |     |  +--| (100)
+|     |  |     |  |     |     +--Phiasuba|CZR58982.1
+|     |  |     |  |  +--| (45)
+|     |  |     |  |  |  |  +--Glarlozo|XP_008078525.1
+|     |  |     |  |  |  +--| (32)
+|     |  |     |  |  |     |  +--Hyalhepa|PMD28595.1
+|     |  |     |  |  |     +--| (81)
+|     |  |     |  |  |        +--Oidimaiu|KIM95928.1
+|     |  |     |  +--| (38)
+|     |  |     |     +--Hymefrax|CAG8954146.1
+|     |  |  +--| (41)
+|     |  |  |  +--Erysneca|KAI6251061.1
+|     |  +--| (35)
+|     |     +--Chloaeru|TAQ89812.1
+|  +--| (100)
+|  |  |     +--HumcCH11|FUN_011430-T1
+|  |  |  +--| (100)
+|  |  |  |  +--HumcLPSC|FUN_002941-T1
+|  |  +--| (77)
+|  |     +--Pseudest|XP_024321006.1
++--| (98)
+|  +--Xenopyri|FUN_006095-T1
+|
++--Allalyco|FUN_000727-T1
+
+
+Consensus tree in newick format: 
+
+(Allacyti|FUN_005358-T1:0.0210463632,(((((((((((((((((((((((Allacyti|FUN_005478-T1:0.0178498997,Allalyco|FUN_000622-T1:0.0000027072)100:0.0133789018,Xenopyri|FUN_006189-T1:0.0270885678)100:0.0405722604,Chaeraph|FUN_003900-T1:0.0995145964)53:0.0118668626,(HumcCH11|FUN_012928-T1:0.0000027072,HumcLPSC|FUN_004130-T1:0.0000027072)100:0.0191480559)44:0.0053656136,(Botrcine|XP_001553849.1:0.0192479640,Sclescle|APA13271.1:0.0137973026)100:0.0423918231)45:0.0103928371,Chloaeru|TAQ84506.1:0.0590865745)60:0.0066333611,Oidimaiu|KIN00517.1:0.0768849391)40:0.0112464103,(((Aspenige|XP_001391302.1:0.1150706367,(Sacccere|NP_012838.1:0.0000027072,REF_MDH1_P17505_Malato_DH:0.0000027072)100:0.4605946834)80:0.0402311474,Neurcras|XP_958408.1:0.1044535365)79:0.0496691142,Cyclminu|FUN_002759-T1:0.0522815782)64:0.0162665060)32:0.0075480252,(Clausp|KAI9741536.1:0.0593812390,Glarlozo|XP_008084136.1:0.0470171520)50:0.0075870203)35:0.0050986588,(Hymefrax|CAG8961555.1:0.0320877806,(Leotlubr|FUN_004249-T1:0.1211824257,Pseudest|XP_024321656.1:0.0447226755)47:0.0128263351)41:0.0140687848)74:0.0061958662,Hyalhepa|PMD15429.1:0.0334578799)39:0.0101019694,Cadosp|KAH7417986.1:0.0337959981)74:0.0098942356,(Mollscop|XP_018070753.1:0.0115225448,Phiasuba|CZR64855.1:0.0227509119)98:0.0129730067)82:0.0815892846,Erysneca|KAI6247947.1:0.1660738933)100:0.3163904576,((((Aspenige|XP_001402180.1:1.1364632530,(HumcCH11|FUN_011069-T1:0.0000027072,HumcLPSC|FUN_002596-T1:0.0000027072)100:0.3591734084)100:0.3721830017,(((Cadosp|KAH7400220.1:0.1310074891,(Mollscop|XP_018061419.1:0.0857474178,Phiasuba|CZR55972.1:0.0578015732)99:0.0290860397)99:0.0518676369,Hyalhepa|PMD26915.1:0.1729184422)100:0.2124086055,Oidimaiu|KIM95264.1:0.2369110891)92:0.1585345152)99:0.5881244941,(Mollscop|XP_018064236.1:0.3378589059,Neurcras|XP_964554.1:0.4551411479)98:0.4340889081)100:2.6191764454,((Sacccere|NP_010205.1:0.0000027072,REF_MDH3_P32419_Malato_DH:0.0000027072)100:0.7200132039,(Sacccere|NP_014515.2:0.0000027072,REF_MDH2_P22133_Malato_DH:0.0000027072)100:0.8595148069)58:0.0125208507)85:0.1753699637)90:0.1262725777,(Aspenige|XP_001394696.1:0.4302850723,(Cadosp|KAH7409637.1:0.1232533947,(HumcLPSC|FUN_011118-T1:0.1220858298,Phiasuba|CZR56502.1:0.1087127234)62:0.0317126450)98:0.1335369022)100:0.2269390881)97:0.0893038242,Aspenige|XP_003188908.1:0.1762777340)97:0.0835924845,Chaeraph|FUN_004362-T1:0.0929878798)90:0.0390044063,Cyclminu|FUN_001636-T1:0.1115302923)90:0.0388434205,((Clausp|KAI9746425.1:0.0788293479,Leotlubr|FUN_008398-T1:0.1563417534)85:0.0142336579,Neurcras|XP_011393887.1:0.1346227260)60:0.0238957916)33:0.0044268904,((((Botrcine|XP_024554015.1:0.0098979958,Sclescle|APA15334.1:0.0239701671)100:0.0283153450,(((Cadosp|KAH7393179.1:0.0538020354,(Mollscop|XP_018074471.1:0.0000022902,Phiasuba|CZR58982.1:0.0287440837)100:0.0314173168)52:0.0197870467,(Glarlozo|XP_008078525.1:0.0352978816,(Hyalhepa|PMD28595.1:0.0465153016,Oidimaiu|KIM95928.1:0.0624655031)81:0.0156300051)32:0.0196885873)45:0.0170089773,Hymefrax|CAG8954146.1:0.0454425634)38:0.0188044450)43:0.0115835331,Erysneca|KAI6251061.1:0.2973595688)41:0.0239980836,Chloaeru|TAQ89812.1:0.0298417567)35:0.0146949935)78:0.0129971706,((HumcCH11|FUN_011430-T1:0.0000027072,HumcLPSC|FUN_002941-T1:0.0000027072)100:0.0753200987,Pseudest|XP_024321006.1:0.0594576512)77:0.0090619452)100:0.0397384355,Xenopyri|FUN_006095-T1:0.0229747844)98:0.0137616104,Allalyco|FUN_000727-T1:0.0259866008);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t hongo_comparativa/A4_A7prot/Malato_DH.treefile -m "LG+R4{0.20496,0.115775,0.47878,0.569775,0.244753,1.62501,0.0715074,4.27573}" --length 287
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s hongo_comparativa/A4_A7prot/Malato_DH.trim.aln --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s hongo_comparativa/A4_A7prot/Malato_DH.trim.aln --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Tue Oct  6 10:51:53 2026
+Total CPU time used: 1259.459606 seconds (0h:20m:59s)
+Total wall-clock time used: 421.7813931 seconds (0h:7m:1s)
+
